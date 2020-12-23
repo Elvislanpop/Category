@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		0852BE3525825956001CAB59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0852BE3325825956001CAB59 /* LaunchScreen.storyboard */; };
 		0852BE3825825956001CAB59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0852BE3725825956001CAB59 /* main.m */; };
 		089A6B5E258641C9003719DB /* DDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 089A6B5D258641C9003719DB /* DDButton.m */; };
+		C95E4321259318C8009D5C1D /* UIColor+DDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C95E4320259318C8009D5C1D /* UIColor+DDColor.m */; };
 		D549B9A68EB78B2B045EE110 /* Pods_Category.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF50C1E0F5D2880D778A094 /* Pods_Category.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,8 @@
 		5DFE477C8014386144D1B623 /* Pods-Category.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Category.debug.xcconfig"; path = "Target Support Files/Pods-Category/Pods-Category.debug.xcconfig"; sourceTree = "<group>"; };
 		7BF50C1E0F5D2880D778A094 /* Pods_Category.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Category.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BE17AC3036B2FEF0147CE8 /* Pods-Category.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Category.release.xcconfig"; path = "Target Support Files/Pods-Category/Pods-Category.release.xcconfig"; sourceTree = "<group>"; };
+		C95E431F259318C8009D5C1D /* UIColor+DDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+DDColor.h"; sourceTree = "<group>"; };
+		C95E4320259318C8009D5C1D /* UIColor+DDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DDColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 			children = (
 				089A6B5C258641C9003719DB /* DDButton.h */,
 				089A6B5D258641C9003719DB /* DDButton.m */,
+				C95E431F259318C8009D5C1D /* UIColor+DDColor.h */,
+				C95E4320259318C8009D5C1D /* UIColor+DDColor.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -110,7 +115,6 @@
 				5DFE477C8014386144D1B623 /* Pods-Category.debug.xcconfig */,
 				A1BE17AC3036B2FEF0147CE8 /* Pods-Category.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -230,6 +234,7 @@
 				0852BE2D25825956001CAB59 /* ViewController.m in Sources */,
 				0852BE2725825956001CAB59 /* AppDelegate.m in Sources */,
 				0852BE3825825956001CAB59 /* main.m in Sources */,
+				C95E4321259318C8009D5C1D /* UIColor+DDColor.m in Sources */,
 				089A6B5E258641C9003719DB /* DDButton.m in Sources */,
 				0852BE2A25825956001CAB59 /* SceneDelegate.m in Sources */,
 			);

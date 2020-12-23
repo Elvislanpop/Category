@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "DDButton.h"
 #import <Masonry/Masonry.h>
+#import "UIColor+DDColor.h"
 @interface ViewController ()
 
 @end
@@ -17,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor randomColor];
     
     DDButton *ddBtn = [[DDButton alloc]initWithTitle:@"HYD" ImageName:nil TextColor:[UIColor greenColor] Font:[UIFont systemFontOfSize:21.f] Alignment:NSTextAlignmentCenter];
     [self.view addSubview:ddBtn];
