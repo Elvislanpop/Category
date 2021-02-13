@@ -15,6 +15,11 @@ typedef NS_ENUM(NSUInteger, ButtonStyle) {
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DDButton : UIButton
+
+/// 常用初始化
+/// @param title 按钮标题
+/// @param imageName 按钮图片
+-(instancetype)initWithTitle:(nullable NSString *)title ImageName:(nullable NSString *)imageName;
 /// 常用初始化
 /// @param title 按钮标题
 /// @param imageName 按钮图片

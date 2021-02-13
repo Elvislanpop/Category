@@ -6,6 +6,7 @@
 //
 
 #import "DDButton.h"
+#import "UIColor+DDColor.h"
 @interface DDButton()
 
 @end
@@ -18,12 +19,31 @@
 /// @param alignment 对齐方式
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-designated-initializers"
+/// 常用初始化
+/// @param title 按钮标题
+/// @param imageName 按钮图片
+-(instancetype)initWithTitle:(NSString *)title ImageName:(NSString *)imageName
+{
+    if (self = [super init]) {
+        self = [DDButton buttonWithType:UIButtonTypeCustom];
+        [self setTitle:title forState:0];
+        [self setTitleColor:[UIColor colorWithLight:[UIColor blackColor] DarkColor:[UIColor whiteColor]] forState:UIControlStateNormal];
+        self.titleLabel.font = [UIFont systemFontOfSize:16.f];
+        self.titleLabel.textAlignment = NSTextAlignmentLeft;
+    }
+    
+    return self;
+}
+/// 常用初始化
+/// @param title 按钮标题
+/// @param imageName 按钮图片
+/// @param color 文字颜色
+/// @param alignment 对齐方式
 -(instancetype)initWithTitle:(nullable NSString *)title ImageName:(nullable NSString *)imageName TextColor:(UIColor *)color  Font: (UIFont *)font Alignment:(NSTextAlignment )alignment
 {
     if (self = [super init]) {
         self = [DDButton buttonWithType:UIButtonTypeCustom];
         [self setTitle:title forState:0];
-        [self setTitleColor:color forState:UIControlStateNormal];
         [self setTitleColor:color forState:UIControlStateNormal];
         self.titleLabel.font = font;
         self.titleLabel.textAlignment = alignment;

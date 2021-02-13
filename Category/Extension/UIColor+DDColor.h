@@ -20,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 随机色
 +(UIColor *)randomColor;
 
-
 /// 不同模式显示不同的颜色
 /// @param lightColor 白天模式颜色
 /// @param darkColor 暗夜模式颜色
